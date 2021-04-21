@@ -1,0 +1,12 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<h1>Neighborhood Tree Display</h1>
+
+		<p>Given the flat data structure containing all regions, construct a tree using nested lists from that data.</p>
+		<ul>
+			<template for:each={regions} for:item="region">
+				<li key={region.id}>{region.name} ({region.id})</li>
+			</template>
+		</ul>
+	</div>
+</template>
